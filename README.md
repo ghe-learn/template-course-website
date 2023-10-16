@@ -1,7 +1,22 @@
-# Website template for courses taught by GHE, ETH Zurich
+# website
+
+Website and course material for "Open Science Tools - authoring and publishing workflows for collaborative scientific writing"
+
+See https://ost-hs23.github.io/website/ for course website.
+
+## Abstract
+
+As the expectations of researchers increase, publishing reproducible
+scientific articles becomes essential. However, choosing tools for these
+tasks can be difficult. This course aims to guide researchers through
+these challenges by introducing a workflow that utilizes Git, GitHub,
+and the Quarto scientific and technical publishing system for
+collaborative scientific writing.
 
 ## Attribution
 
-The layout of the website and naming convention are based on [STA 210 at Duke University (Spring 2022)
-](https://github.com/sta210-s22/website) by [Dr. Mine Çetinkaya-Rundel](https://mine-cr.com/).
+Content was re-used from a workshop hosted by [Mine Çetinkaya-Rundel](https://mine-cr.com/) at the 2023 Symposium on Data Science and Statistics and stored at <https://github.com/mine-cetinkaya-rundel/quarto-sdss>. The original content is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
+--------------------------------------------------------------------------------
+
+![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).

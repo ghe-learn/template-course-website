@@ -1,39 +1,77 @@
 ---
-title: "Course Overview"
+title: "Pre-course work - Open Science Tools HS23"
 editor: source
 execute: 
   echo: false
   warning: false
+editor_options: 
+  chunk_output_type: console
+bibliography: references.bib
 ---
 
-# Title
+Thank you for your interest in this course. Your course instructor [Lars Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) is looking forward to meet you. 
 
-**Dates**
+We will meet in Room HG F 33.5 at the following times:
 
-- 
-- 
+-   **Day 1:** 17th October 2023 - 08:30 am to 12:30 pm CET
+-   **Day 2:** 24th October 2023 - 08:30 am to 12:30 pm CET
 
-**Instructor**
+Please ensure you bring the following items to class:
 
-- [Lars Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) - [Global Health Engineering - ETH Zurich](https://ghe.ethz.ch/)
+-   a laptop, connected to ETH wifi
+-   a browser installation on your laptop
+
+Prior to Day 1, there is some pre-work for you to do. This pre-work will ensure that we can focus our time together on learning instead of setting up infrastructure.
+
+## {{< fa circle-question >}} What do I need to prepare before Day 1?
+
+Prior to Day 1, please complete the following seven steps:
+
+-   [Step 1](0-2-pre-work/01-github.html): Get an account on GitHub and setup a GitHub Personal Access Token (PAT)
+-   [Step 2](0-2-pre-work/02-orcid.html): Register for an ORCID iD
+-   [Step 3](0-2-pre-work/03-zotero.html): Sign-up for Zotero and setup Zotero reference management software
+-   [Step 4](0-2-pre-work/04-posit-cloud.html): Log into Posit Cloud and join the workspace for the course
+-   [Step 5](0-2-pre-work/05-element.html): Log into Element and join the room for our course
+-   [Step 6](0-2-pre-work/06-survey.html): Fill out the pre-course survey by **Friday, 13th October**
+-   [Step 7](0-2-pre-work/07-reading.html): Read @wilson2017good and prepare for a discussion
+
+```{r}
+library(googlesheets4)
+library(dplyr)
+library(knitr)
+library(readr)
+```
+
+## Day 1
+
+```{r}
+#| tbl-colwidths: [25,75]
+read_csv(here::here("data/tbl-01-ost-hs-23-course-schedule.csv")) |> 
+  filter(day == 1) |> 
+  select(Time = time, Module = title) |> 
+  kable()
+  
+```
+
+## Day 2
+
+```{r}
+#| tbl-colwidths: [25,75]
+
+read_csv(here::here("data/tbl-01-ost-hs-23-course-schedule.csv")) |>
+  filter(day == 2) |> 
+  select(Time = time, Module = title) |> 
+  kable()
+```
 
 
-## Abstract
+## Thanks!
 
-## Objective
+Thank you for working through these steps. You will hear from us again a day before the start of the course.
 
-## Content
 
-## Lecture notes
+------------------------------------------------------------------------
 
-## Prerequisites / Notice
+![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
-# Performance Assessment
-
-## Assignments
-
-## Attendance
-
-## Grading scheme
-
-## Late work, extensions, and special circumstances
+Content was re-used from a workshop hosted by [Mine Çetinkaya-Rundel](https://mine-cr.com/) at the 2023 Symposium on Data Science and Statistics and stored at <https://github.com/mine-cetinkaya-rundel/quarto-sdss>. The original content is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
